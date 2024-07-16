@@ -25,7 +25,7 @@ header {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 1rem 0;
+    padding: 0.6rem 0; /* Reduced padding */
     position: relative;
 }
 
@@ -36,9 +36,9 @@ header {
 .header-image {
     width: 100%;
     height: auto;
-    max-height: 200px; /* Adjust as needed */
+    max-height: 120px; /* Reduced max-height */
     object-fit: cover;
-    margin-bottom: 1rem;
+    margin-bottom: 0.6rem; /* Reduced margin */
 }
 
 .header-text {
@@ -47,35 +47,35 @@ header {
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%);
     color: #00bfff; /* Bright Sky Blue for text */
-    font-size: 4rem; /* Slightly smaller size */
+    font-size: 2.4rem; /* Reduced font-size */
     font-weight: bold;
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase; /* Make the text uppercase */
-    letter-spacing: 2px; /* Slightly increased spacing between letters */
+    letter-spacing: 1.2px; /* Reduced letter-spacing */
     background: linear-gradient(135deg, #00bfff, #1e90ff); /* Gradient from Sky Blue to Dodger Blue */
     -webkit-background-clip: text; /* Clip background to text */
     background-clip: text;
     color: transparent; /* Make text color transparent to show gradient */
-    border: 3px solid #fff; /* White border around the text */
-    padding: 0.5rem 1rem; /* Padding around the text */
-    border-radius: 0.5rem; /* Rounded corners */
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+    border: 1.8px solid #fff; /* Reduced border-width */
+    padding: 0.3rem 0.6rem; /* Reduced padding */
+    border-radius: 0.3rem; /* Reduced border-radius */
+    box-shadow: 0 0 4.8px rgba(0, 0, 0, 0.5); /* Reduced shadow */
     animation: text-pop 2s infinite; /* Pop-out animation */
 }
 
 /* Animation for pop-out effect */
 @keyframes text-pop {
     0% {
-        transform: translate(-50%, -50%) scale(1);
+        transform: translate(-50%, -50%) scale(0.6);
     }
     50% {
-        transform: translate(-50%, -50%) scale(1.2); /* Scale up the text */
+        transform: translate(-50%, -50%) scale(0.72); /* Scale up the text */
     }
     70% {
-        transform: translate(-50%, -50%) scale(1.1); /* Slightly reduce the scale */
+        transform: translate(-50%, -50%) scale(0.66); /* Slightly reduce the scale */
     }
     100% {
-        transform: translate(-50%, -50%) scale(1);
+        transform: translate(-50%, -50%) scale(0.6);
     }
 }
 
@@ -90,7 +90,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 1rem;
+    margin: 0 0.6rem; /* Reduced margin */
     position: relative; /* Necessary for the pseudo-element positioning */
     transition: transform 0.3s ease; /* Smooth pop-out effect */
 }
@@ -99,7 +99,7 @@ nav ul li {
 nav ul li a {
     color: whitesmoke;
     text-decoration: none;
-    padding: 1rem;
+    padding: 0.6rem; /* Reduced padding */
     display: block;
     position: relative; /* Necessary for the pseudo-element positioning */
     transition: color 0.3s ease; /* Smooth color transition */
@@ -107,16 +107,15 @@ nav ul li a {
 
 /* Pop-out animation effect on hover */
 nav ul li:hover {
-    transform: scale(1.1); /* Slightly enlarge the item */
+    transform: scale(0.66); /* Slightly enlarge the item */
 }
 
 /* Color change and background on hover */
 nav ul li a:hover {
     color: black; 
     background-color: silver; /* Slightly transparent white background */
-    border-radius: 4px; /* Rounded corners */
+    border-radius: 2.4px; /* Reduced border-radius */
 }
-
 
 nav ul li a:hover::after {
     transform: scaleX(1);
@@ -125,29 +124,18 @@ nav ul li a:hover::after {
 
 /* Main Content Styling */
 main {
-    padding: 6rem;
+    padding: 3.6rem; /* Reduced padding */
     background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
-    box-shadow: 0 0 10px wheat;
-    border-radius: 8px;
-    max-width: 800px;
-    margin: 2rem auto;
-    color: white; /* Ensure text is readable */
-}
-
-/* Main Content Styling */
-main {
-    padding: 6rem;
-    background-color: rgba(0, 0, 0, 0.7); /* Adjust transparency of the main section background */
-    box-shadow: 0 0 10px wheat;
-    border-radius: 8px;
-    max-width: 800px;
-    margin: 2rem auto;
+    box-shadow: 0 0 6px wheat; /* Reduced shadow */
+    border-radius: 4.8px; /* Reduced border-radius */
+    max-width: 480px; /* Reduced max-width */
+    margin: 1.2rem auto; /* Reduced margin */
     color: white; /* Ensure text is readable */
 }
 
 /* Sections Styling */
 section {
-    margin-bottom: 2rem;
+    margin-bottom: 1.2rem; /* Reduced margin-bottom */
 }
 
 /* Joining Links Section */
@@ -161,25 +149,25 @@ section {
     text-decoration: none;
     color: #333;
     background-color: #f0f0f0;
-    padding: 1rem;
-    border-radius: 8px;
-    margin-bottom: 1rem;
+    padding: 0.6rem; /* Reduced padding */
+    border-radius: 4.8px; /* Reduced border-radius */
+    margin-bottom: 0.6rem; /* Reduced margin-bottom */
     display: flex;
     align-items: center;
     transition: background-color 0.3s ease, transform 0.2s ease;
     width: 100%;
-    max-width: 400px; /* Adjust as needed */
+    max-width: 240px; /* Reduced max-width */
 }
 
 .joining-link img {
-    width: 24px; /* Adjust the width to make the icons smaller */
+    width: 14.4px; /* Reduced width */
     height: auto;
-    margin-right: 0.75rem; /* Adjust the space between the icon and text */
+    margin-right: 0.45rem; /* Reduced margin-right */
 }
 
 .joining-link:hover {
     background-color: #e0e0e0;
-    transform: translateY(-3px);
+    transform: translateY(-1.8px); /* Reduced translateY */
 }
 
 .whatsapp {
@@ -192,94 +180,64 @@ section {
     color: #fff;
 }
 
-/* Sections Styling */
-.welcome-section, .events-section, .links-section {
-    margin-bottom: 2rem;
+/* Footer Styling */
+footer {
+    background-color: #333; /* Dark background to contrast with the body */
+    color: #fff; /* White text for readability */
+    text-align: center; /* Center-align the text */
+    padding: 1rem; /* Add padding for spacing */
+    position: relative; /* Ensure it's properly positioned */
+    margin-top: auto; /* Pushes the footer to the bottom */
 }
 
-/* Joining Links Section */
-.joining-links-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Additional styles if needed */
+footer p {
+    margin: 0; /* Remove default margin */
+    font-size: 0.9rem; /* Slightly smaller font-size for the footer text */
 }
 
-.joining-link {
-    text-decoration: none;
-    color: #333;
-    background-color: #f0f0f0;
-    padding: 1rem;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    width: 100%;
-    max-width: 400px; /* Adjust as needed */
-}
 
-.joining-link img {
-    width: 24px; /* Adjust the width to make the icons smaller */
-    height: auto;
-    margin-right: 0.75rem; /* Adjust the space between the icon and text */
-}
 
-.joining-link:hover {
-    background-color: #e0e0e0;
-    transform: translateY(-3px);
-}
-
-.whatsapp {
-    background-color: #25d366;
-    color: #fff;
-}
-
-.discord {
-    background-color: #7289da;
-    color: #fff;
-}
 
 /* Form Styling */
 form {
-    max-width: 600px;
+    max-width: 360px; /* Reduced max-width */
     margin: 0 auto;
 }
 
 form label {
     display: block;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.3rem; /* Reduced margin-bottom */
 }
 
 form input, form textarea {
     width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
+    padding: 0.3rem; /* Reduced padding */
+    margin-bottom: 0.6rem; /* Reduced margin-bottom */
 }
 
 /* Enhanced Send Button Styling */
 form button {
     background: linear-gradient(135deg, #00bfff, #1e90ff); /* Gradient background */
     color: #fff;
-    padding: 0.75rem 1.5rem; /* Increased padding */
+    padding: 0.45rem 0.9rem; /* Reduced padding */
     border: none;
-    border-radius: 0.5rem; /* Rounded corners */
+    border-radius: 0.3rem; /* Reduced border-radius */
     cursor: pointer;
-    font-size: 1rem; /* Adjust font size */
+    font-size: 0.6rem; /* Reduced font-size */
     font-weight: bold; /* Make text bold */
     transition: background 0.3s ease, transform 0.2s ease; /* Smooth transition */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    box-shadow: 0 2.4px 3.6px rgba(0, 0, 0, 0.2); /* Reduced shadow */
 }
 
 /* Button Hover Effect */
 form button:hover {
     background: linear-gradient(135deg, #1e90ff, #00bfff); /* Reversed gradient on hover */
-    transform: translateY(-2px); /* Slight lift effect */
+    transform: translateY(-1.2px); /* Slight lift effect */
 }
 
 /* Button Focus Effect */
 form button:focus {
     outline: none; /* Remove default focus outline */
-    box-shadow: 0 0 0 3px rgba(0, 120, 255, 0.5); /* Focus ring */
+    box-shadow: 0 0 0 1.8px rgba(0, 120, 255, 0.5); /* Focus ring */
 }
-
-
